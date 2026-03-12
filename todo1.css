@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./icons/neon_sunset_4k_by_axiomdesign_dbqddb9\ \(2\).png') no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.to-do-app {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Section */
+.stat-container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bar {
+    width: 100%;
+    height: 7px;
+    background: rgba(255, 182, 193, 0.3);
+    border-radius: 20px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #ff69b4;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.numbers {
+    width: 80px;
+    height: 80px;
+    background: #ff1493;
+    border: 3px solid #ffb6c1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Input Styles */
+.input-area {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 10px 17px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    background: rgba(255, 192, 203, 0.2);
+    color: #eee;
+}
+
+button#addTaskButton {
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 192, 203, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button#addTaskButton:hover {
+    transform: scale(1.1);
+    background: #ff69b4;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 192, 203, 0.1);
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #444;
+}
+
+.empty-image {
+    width: 150px;
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    .to-do-app { padding: 1.5rem; }
+    .numbers { width: 60px; height: 60px; font-size: 1.2rem; }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="todo1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="to-do-app">
+            <h1>To-Do List</h1>
+            
+            <div class="stat-container">
+                <div class="details">
+                    <h3>Progress</h3>
+                    <div id="progress-bar" class="bar">
+                        <div id="progress" class="progress"></div>
+                    </div>
+                </div>
+                <div class="numbers">
+                    <p id="numbers">0/0</p>
+                </div>
+            </div>
+
+            <form class="input-area" id="todo-form">
+                <input type="text" id="taskInput" placeholder="Write your next task..." autocomplete="off">
+                <button type="submit" id="addTaskButton">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+
+            <div class="todus-container" id="todo-container">
+                <ul id="taskList"></ul>
+                <img src="icons/todo.webp" alt="No tasks" id="emptyImage" class="empty-image">
+            </div>
+        </div>
+    </div>
+    <script src="todo1.js"></script>
+</body>
+</html>
