@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="amazon.css">
+  </head>
+  <body>
+    <!-- Amazon Header -->
+    <div class="amazon-header">
+      <div class="amazon-header-left-section">
+        <span class="header-link">Amazon Clone</span>
+      </div>
+      <div class="amazon-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">Q</button>
+      </div>
+      <div class="amazon-header-right-section">
+        <span class="cart-link header-link">
+          Cart (<span class="cart-quantity js-cart-quantity">0</span>)
+        </span>
+      </div>
+    </div>
+
+    <!-- Main Product Grid (Empty, to be filled by JS) -->
+    <main class="main">
+      <div class="products-grid js-products-grid"></div>
+    </main>
+
+    <script src="data/products.js"></script>
+    <script src="scripts/amazon.js"></script>
+  </body>
+</html>

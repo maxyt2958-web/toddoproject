@@ -38,7 +38,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Progress Section */
+
 .stat-container {
     width: 100%;
     padding: 15px;
@@ -80,7 +80,7 @@ body {
     font-weight: bold;
 }
 
-/* Input Styles */
+
 .input-area {
     display: flex;
     width: 100%;

@@ -37,7 +37,7 @@ addTaskButton.addEventListener("submit", (e) => {
             saveTasks();
         });
 
-        // Delete logic [00:16:23]
+    
         li.querySelector(".delete-btn").addEventListener("click", () => {
             li.remove();
             toggleEmptyState();
@@ -45,7 +45,7 @@ addTaskButton.addEventListener("submit", (e) => {
             saveTasks();
         });
 
-        // Edit logic [00:16:48]
+        
         li.querySelector(".edit-btn").addEventListener("click", () => {
             if (!checkbox.checked) {
                 taskInput.value = li.querySelector("span").textContent;
